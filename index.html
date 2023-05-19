@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Prototype2</title>
+</head>
+<body>
+    <div id="sceneZero">
+        <h1>Welcome to trivia Battle</h1>
+        <h2>choose your field of battle</h2>
+        <div id="wrapper">
+            <div id="SceneZeroInput">
+                <!-- It seems like an auto complete is a non beginer and very involved process... the simplest tutorial i found was multiple functions and over 100 lines of code -->
+                <input type="text" placeholder="Enter Genre" id="genre" autocomplete="off">
+            </div>
+            <div id="SceneZeroSkill">
+                <label for="skill" id="skillLable">Player Skill</label>
+                <select name="skill" id="skill">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div id="SceneZeroDifficulty">
+                <label for="difficultyInit" id="difficultyInitLable">Question Difficulty</label>
+                <select name="difficultyInit" id="difficultyInit">
+                    <option value="">Any</option>
+                    <option value="&difficulty=easy">Easy</option>
+                    <option value="&difficulty=medium">Medium</option>
+                    <option value="&difficulty=hard">Hard</option>
+                </select>
+            </div>
+            <div id="SceneZeroSubmit">
+                <button id="begin" onclick="getData(getNewURL()), hideElements(1)">Let the battle begin</button>
+            </div>
+        </div>
+    </div>
+    <div id="sceneOne">
+        <p id="question"></p>
+        <div id="wrapper2">
+            <div id="answer_0">
+                <input type="radio" id="radio_answer0" name="answer" value="">
+                <label for="radio_answer0" id="answer0"></label>
+            </div>
+            <div id="answer_1">
+                <input type="radio" id="radio_answer1" name="answer" value="">
+                <label for="radio_answer1" id="answer1"></label>
+                <label for="choice1" id="choice1Lable"></label>
+            </div>
+            <div id="answer_2">
+                <input type="radio" id="radio_answer2" name="answer" value="">
+                <label for="radio_answer2" id="answer2"></label>
+            </div>
+            <div id="answer_3">
+                <input type="radio" id="radio_answer3" name="answer" value="">
+                <label for="radio_answer3" id="answer3"></label>
+            </div>
+            <!-- this is now a hidden element -->
+            <p id="info"></p>
+            <button id="attackButton" onclick="changeHealth()">Attack</button>
+            <button id="retreatButton" onclick="hideElements(0), resetGame()">Retreat</button>
+            <p id="playerHp"></p>
+            <p id="enemyHp"></p>
+            <img id="blueFighter" src="Images/BlueIdle.png" alt="Blue warrior">
+            <img id="redFighter" src="Images/RedIdle.png" alt="Red warrior">
+        </div>
+    </div>
+    <div id="scenetwo">
+        <h1 id="gameCondition"></h1>
+        <button id="gameConditionButton" onclick="hideElements(0), resetGame()">Return</button>
+    </div>
+    <footer>
+        <p>Joanthan Karcher, IGME 235-1, Project 2</p>
+        <p><a href="about.html">About</a></p>
+    </footer>
+    <!--The script tage is at the bottom intentionally as insurance of function since absolutly no line in this file should execute untill everything else has loaded-->
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

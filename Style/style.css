@@ -1,0 +1,181 @@
+body
+{
+    background: linear-gradient(0.25turn, #0e00a6, #ffffff, #5e0000);
+    height: 100%;
+}
+h1
+{
+    color: #740000;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+h2
+{
+    color: #740000;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive; 
+} 
+label
+{
+    color: #740000;;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+p
+{
+    color: #740000;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+#question
+{
+    text-align: center;
+}
+button
+{
+    min-width: 300px;
+    background: linear-gradient(0.25turn, #6a678a, #ffffff, #5c4e4e);
+    color: #5e0000;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 15px;
+}
+option, label, select
+{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+/* Display for scene zero */
+#wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40%;
+    column-gap: 1%;
+}
+#SceneZeroInput > input
+{
+    width: 25vw;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+#SceneZeroInput
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+#SceneZeroSkill
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+#SceneZeroDifficulty
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+#SceneZeroSubmit
+{
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 4;
+}
+/* display for scene one */
+#wrapper2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1%;
+    column-gap: 1%;
+}
+#answer_0
+{
+    grid-area: Img5;
+    grid-column: 2;
+    grid-row: 1;
+}
+#answer_1
+{
+    grid-area: Img6;
+    grid-column: 2;
+    grid-row: 2;
+}
+#answer_2
+{
+    grid-area: Img7;
+    grid-column: 2;
+    grid-row: 3;
+}
+#answer_3
+{
+    grid-area: Img8;
+    grid-column: 2;
+    grid-row: 4;
+}
+#attackButton
+{
+    margin-top: 50px;
+    grid-area: Img9;
+    grid-column: 2;
+    grid-row: 5;
+}
+#retreatButton
+{
+    margin-top: 50px;
+    grid-area: Img10;
+    grid-column: 2;
+    grid-row: 6;
+}
+#playerHp
+{
+    color: #000000;
+    justify-self: center;
+    grid-area: Img11;
+    grid-column: 1;
+    grid-row: 7;
+}
+#enemyHp
+{
+    color: #000000;
+    justify-self: center;
+    grid-area: Img12;
+    grid-column: 3;
+    grid-row: 7;
+}
+#blueFighter
+{
+    grid-area: Img12;
+    justify-self: right;
+    grid-column: 1;
+    grid-row: 8;
+}
+#redFighter
+{
+    grid-area: Img12;
+    justify-self: left;
+    grid-column: 3;
+    grid-row: 8;
+}
+/* display for scene two */
+#gameConditionButton
+{
+    display: flex;
+    justify-self: center;
+    margin: auto;
+}
+footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer > p
+{
+    text-align: center;
+}
+#gameConditionButton
+{
+    justify-content: center;
+}
